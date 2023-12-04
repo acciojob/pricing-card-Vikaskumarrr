@@ -1,8 +1,10 @@
- body {
+   body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+	   display: flex;
+	   align: center;
     }
 
     /* Card styles */
@@ -17,19 +19,37 @@
     .card img {
       width: 100%;
     }
-h1{
-	margin-left: 50px
-}
-p{
-	margin-left: 50px;
-}
 
-botton{
-	margin-left: 120px;
-	padding: 10px;
-      background-color: red;
+    /* Title styles */
+    .card h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Pricing Information styles */
+    .card p.price {
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Description styles */
+    .card p.description {
+      color: #666;
+    }
+
+    /* Buy Now Button styles */
+    .card button {
+      padding: 10px;
+      background-color: #3498db;
       color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-}
+    }
+
+    /* Clearfix for floating elements */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
